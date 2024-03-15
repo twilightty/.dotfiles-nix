@@ -4,3 +4,9 @@
 ```bash
 darwin-rebuild switch --flake .
 ```
+
+## Explaination
+```
+- darwin/: non-nix packages (homebrew or macports)
+- shell/: native nix packages
+```
