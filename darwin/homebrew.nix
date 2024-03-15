@@ -30,6 +30,9 @@
             "notion"
 
 
+            #browser
+            "google-chrome"
+
             #prod
             #"ableton-live-suite"
             #"rekordbox"
@@ -40,6 +43,8 @@
             #i'm vietnamese :(
             "gotiengviet"
             
+
+
         ];
 
         taps = [
