@@ -8,6 +8,8 @@
         
         brews = [
             "git"
+            "starship"
+            "borders"
         ];
 
         casks = [
@@ -42,8 +44,6 @@
 
             #i'm vietnamese :(
             "gotiengviet"
-            
-
 
         ];
 

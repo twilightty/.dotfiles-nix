@@ -49,9 +49,8 @@
             shell = pkgs.zsh;
           };
 
-          programs.zsh.enable = true;
+        programs.zsh.enable = true;
          services.nix-daemon.enable = true;
-
 
          security = {
           pam.enableSudoTouchIdAuth = true;
@@ -101,6 +100,7 @@
             users.kirb = { ... }: with inputs; {
               imports = [
                 ./shell
+                ./shell/home.nix
               ];
               programs.neovim.enable = true;
               home.stateVersion = "23.05";
