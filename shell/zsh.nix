@@ -9,7 +9,9 @@
             eval "$(starship init zsh)"
         '';
         shellAliases = {
-                nupd = "darwin-rebuild switch --flake .";
+                nupd = "cd ~/nix-kirb && darwin-rebuild switch --flake .";
+                g = "git";
+                
         };
     };
 }
