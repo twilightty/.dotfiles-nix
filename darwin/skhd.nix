@@ -19,6 +19,9 @@
             shift + alt - space : \
             yabai -m window --toggle float; \
             yabai -m window --toggle border
+
+            alt - d : yabai -m space --layout $(yabai -m query --spaces --space | jq -r 'if .type == "bsp" then "stack" else "bsp" end')
         '';
+        
     };
 }
