@@ -14,6 +14,7 @@
                 nupd = "cd ~/.config/nix-kirb && darwin-rebuild switch --flake .";
                 g = "git";
                 neofetch = "python3 -W ignore -m twidgets";
+                skhd = "/nix/store/jrz05pcnlrzb0jwgalnvrmp0ja6xqb2q-skhd-0.3.9/bin/skhd";
                 
         };
     };
