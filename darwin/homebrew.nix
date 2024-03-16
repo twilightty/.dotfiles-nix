@@ -50,7 +50,10 @@
             "intellij-idea"
             "goland"
             "arturia-software-center"
-            
+
+            "plex"
+            "sublime-merge"
+            "microsoft-remote-desktop"
 
         ];
 
