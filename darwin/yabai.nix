@@ -13,6 +13,9 @@
       # set modifier + left-click drag to resize window (default: move)
       mouse_action1 = "move";
 
+      mouse_follows_focus = "off";
+      focus_follows_mouse = "autofocus";
+
       # gaps
       top_padding = 10;
       bottom_padding = 10;
