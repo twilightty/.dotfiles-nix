@@ -25,12 +25,14 @@
             "wireshark"
             "sf-symbols"
             "eul"
+            "ripgrep"
 
             #irc 
             "zoom"
             "slack"
             "discord"
             "notion"
+            "telegram"
 
 
             #browser
@@ -39,6 +41,7 @@
             #prod
             "ableton-live-suite"
             "rekordbox"
+            "native-access"
 
             #font
             "font-jetbrains-mono-nerd-font"
@@ -59,6 +62,10 @@
 
             "libreoffice"
             "microsoft-office-businesspro"
+
+            "airbuddy"
+
+            
 
         ];
 
