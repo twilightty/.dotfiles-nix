@@ -11,7 +11,7 @@
             clear && python3 -W ignore -m twidgets
         '';
         shellAliases = {
-                nupd = "cd ~/nix-kirb && darwin-rebuild switch --flake .";
+                nupd = "cd ~/.config/nix-kirb && darwin-rebuild switch --flake .";
                 g = "git";
                 neofetch = "python3 -W ignore -m twidgets";
                 

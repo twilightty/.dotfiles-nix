@@ -55,6 +55,10 @@
             "sublime-merge"
             "microsoft-remote-desktop"
 
+            #office stuff
+
+            "microsoft-office-businesspro"
+
         ];
 
         taps = [
