@@ -46,6 +46,12 @@
             #i'm vietnamese :(
             "gotiengviet"
 
+            "webstorm"
+            "intellij-idea"
+            "goland"
+            "arturia-software-center"
+            
+
         ];
 
         taps = [
