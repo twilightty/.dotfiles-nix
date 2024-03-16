@@ -63,9 +63,7 @@
             "libreoffice"
             "microsoft-office-businesspro"
 
-            "airbuddy"
-
-            
+            "cloudflare-warp"
 
         ];
 
