@@ -33,6 +33,7 @@
         yabai -m rule --add app="^System Preferences$" manage=off
         yabai -m rule --add title="Preferences$"       manage=off
         yabai -m rule --add title="Settings$"          manage=off
+        yabai -m rule --add app="Finder$"          manage=off
     
         # wp management
         yabai -m space 1 --label todo

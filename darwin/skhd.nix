@@ -14,6 +14,11 @@
             shift + alt - 8: yabai -m window --space  8; yabai -m space --focus 8
             shift + alt - 9: yabai -m window --space  9; yabai -m space --focus 9
             shift + alt - 0: yabai -m window --space  10; yabai -m space --focus 10
+
+            # Float / Unfloat window
+            shift + alt - space : \
+            yabai -m window --toggle float; \
+            yabai -m window --toggle border
         '';
     };
 }
