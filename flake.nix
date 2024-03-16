@@ -64,7 +64,7 @@
           finder.AppleShowAllExtensions = true;
           finder.FXPreferredViewStyle = "clmv";
           loginwindow.LoginwindowText = "kirb:3";
-          screencapture.location = "~/Pictures/screenshots";
+          screencapture.location = "~/Screenshots";
           NSGlobalDomain.AppleInterfaceStyle = "Dark";
         };
 
