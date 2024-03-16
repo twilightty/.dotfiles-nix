@@ -34,8 +34,8 @@
             "google-chrome"
 
             #prod
-            #"ableton-live-suite"
-            #"rekordbox"
+            "ableton-live-suite"
+            "rekordbox"
 
             #font
             "font-jetbrains-mono-nerd-font"

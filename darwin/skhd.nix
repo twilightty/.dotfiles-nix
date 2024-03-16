@@ -4,7 +4,7 @@
         skhdConfig = ''
             # block alt +a / u/ o/ s (jf)
 
-            
-        ''
+
+        '';
     };
 }
