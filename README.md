@@ -10,3 +10,5 @@ darwin-rebuild switch --flake .
 - darwin/: non-nix packages (homebrew or macports)
 - shell/: native nix packages
 ```
+
+![screenshit](screenshot.png)
