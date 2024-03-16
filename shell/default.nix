@@ -2,6 +2,7 @@
     imports = [
         ./tmux.nix
         ./emacs.nix
+        ./zsh.nix
     ];
     programs.neovim.enable = true;
 }

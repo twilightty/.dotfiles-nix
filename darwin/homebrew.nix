@@ -10,6 +10,7 @@
             "git"
             "starship"
             "borders"
+            "fswatch"
         ];
 
         casks = [

@@ -14,9 +14,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nixpkgs-zsh-fzf-tab.url = "github:nixos/nixpkgs/8193e46376fdc6a13e8075ad263b4b5ca2592c03";
+    nix-doom-emacs.url = "github:nix-community/nix-doom-emacs";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager, ... }:
+  outputs = { self, nix-darwin, nixpkgs, home-manager, nix-doom-emacs, ... }@inputs:
   let
     nixpkgsConfig = {
       allowUnfree = true;
@@ -44,14 +45,13 @@
             stateVersion = 4;
           };
 
-          users.users.${user} = {
-            home = "/Users/${user}";
+          users.users.kirb = {
+            home = "/Users/kirb";
             shell = pkgs.zsh;
           };
 
-        programs.zsh.enable = true;
          services.nix-daemon.enable = true;
-
+	       programs.zsh.enable = true;
          security = {
           pam.enableSudoTouchIdAuth = true;
          };
@@ -66,12 +66,6 @@
           screencapture.location = "~/Screenshots";
           NSGlobalDomain.AppleInterfaceStyle = "Dark";
         };
-
-          networking = {
-            computerName = hostname;
-            hostName = hostname;
-            localHostName = hostname;
-          };
 
           nix = {
            useDaemon = true;
@@ -100,9 +94,13 @@
             users.kirb = { ... }: with inputs; {
               imports = [
                 ./shell
-                ./shell/home.nix
+                ./shell/jankyborders.nix
+                nix-doom-emacs.hmModule
               ];
               programs.neovim.enable = true;
+              programs.doom-emacs = {
+                enable = false;
+              };
               home.stateVersion = "23.05";
             };
           };
