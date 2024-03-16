@@ -58,6 +58,7 @@
             #office stuff
 
             "microsoft-office-businesspro"
+            "libreoffice"
 
         ];
 
