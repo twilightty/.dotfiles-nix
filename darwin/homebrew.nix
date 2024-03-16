@@ -11,6 +11,7 @@
             "starship"
             "borders"
             "fswatch"
+            "docker"
         ];
 
         casks = [
@@ -64,6 +65,8 @@
             "microsoft-office-businesspro"
 
             "cloudflare-warp"
+
+            "vmware-fusion"
 
         ];
 
