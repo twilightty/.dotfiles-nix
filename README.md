@@ -11,4 +11,6 @@ darwin-rebuild switch --flake .
 - shell/: native nix packages
 ```
 
-![screenshit](screenshot.png)
+![screenshot](screenshot.png)
+
+wallpapers belong to the computer clan
