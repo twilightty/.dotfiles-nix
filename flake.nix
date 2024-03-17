@@ -95,6 +95,7 @@
               imports = [
                 ./shell
                 ./shell/jankyborders.nix
+		./shell/nvim.nix
                 nix-doom-emacs.hmModule
               ];
               programs.neovim.enable = true;
