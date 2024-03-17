@@ -12,6 +12,7 @@
             "borders"
             "fswatch"
             "docker"
+            "ripgrep"
         ];
 
         casks = [
@@ -26,7 +27,6 @@
             "wireshark"
             "sf-symbols"
             "eul"
-            "ripgrep"
 
             #irc 
             "zoom"
@@ -67,6 +67,8 @@
             "cloudflare-warp"
 
             "vmware-fusion"
+
+            "lunar"
 
         ];
 
