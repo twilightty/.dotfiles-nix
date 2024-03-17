@@ -96,6 +96,7 @@
                 ./shell
                 ./shell/jankyborders.nix
 		./shell/nvim.nix
+		./shell/ohmytmux.nix
                 nix-doom-emacs.hmModule
               ];
               programs.neovim.enable = true;
