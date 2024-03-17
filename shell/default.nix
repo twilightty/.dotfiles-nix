@@ -1,6 +1,5 @@
 { config, pkgs, lib, inputs, system, ... }: {
     imports = [
-        ./tmux.nix
         ./emacs.nix
         ./zsh.nix
     ];

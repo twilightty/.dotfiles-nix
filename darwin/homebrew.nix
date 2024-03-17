@@ -13,6 +13,7 @@
             "fswatch"
             "docker"
             "ripgrep"
+	    "tmux"
         ];
 
         casks = [
@@ -38,7 +39,6 @@
 
             #browser
             "google-chrome"
-
             #prod
             "ableton-live-suite"
             "rekordbox"
