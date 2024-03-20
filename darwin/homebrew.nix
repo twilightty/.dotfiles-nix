@@ -14,6 +14,8 @@
             "docker"
             "ripgrep"
 	    "tmux"
+	    "node"
+	    "yarn"
         ];
 
         casks = [
