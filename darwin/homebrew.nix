@@ -41,6 +41,7 @@
 
             #browser
             "google-chrome"
+	    "qutebrowser"
             #prod
             "ableton-live-suite"
             "rekordbox"
