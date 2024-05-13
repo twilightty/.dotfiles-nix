@@ -30,7 +30,6 @@
             "wireshark"
             "sf-symbols"
             "eul"
-
             #irc 
             "zoom"
             "slack"
