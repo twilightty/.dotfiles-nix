@@ -72,6 +72,8 @@
 
             "lunar"
 
+            "linearmouse"
+
         ];
 
         taps = [
