@@ -16,6 +16,9 @@
 	    "tmux"
 	    "node"
 	    "yarn"
+	    "sketchybar"
+			"eza"
+			"fortune"
         ];
 
         casks = [
@@ -49,7 +52,6 @@
             #font
             "font-jetbrains-mono-nerd-font"
 
-            #i'm vietnamese :(
             "gotiengviet"
 
             "webstorm"
@@ -74,11 +76,13 @@
 
             "linearmouse"
 
+	    "visual-studio-code"
+
+
         ];
 
         taps = [
           "homebrew/bundle"
-          "homebrew/cask-fonts"
           "homebrew/services"
           "FelixKratz/formulae"  
         ];

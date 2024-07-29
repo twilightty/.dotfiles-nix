@@ -62,8 +62,6 @@
           dock.mru-spaces = false;
           finder.AppleShowAllExtensions = true;
           finder.FXPreferredViewStyle = "clmv";
-          loginwindow.LoginwindowText = "kirb:3";
-          screencapture.location = "~/Screenshots";
           NSGlobalDomain.AppleInterfaceStyle = "Dark";
         };
 
@@ -97,6 +95,7 @@
                 ./shell/jankyborders.nix
 		./shell/nvim.nix
 		./shell/ohmytmux.nix
+		./shell/alacritty.nix
                 nix-doom-emacs.hmModule
               ];
               programs.neovim.enable = true;

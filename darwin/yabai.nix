@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }: {
     services.yabai = {
         enable = true;
-        enableScriptingAddition = false;
+        enableScriptingAddition = true;
         config = {
                   external_bar = "all:0:0";
       layout = "bsp";
@@ -17,10 +17,10 @@
       focus_follows_mouse = "autofocus";
 
       # gaps
-      top_padding = 10;
-      bottom_padding = 10;
-      left_padding = 10;
-      right_padding = 10;
+      top_padding = 15;
+      bottom_padding = 15;
+      left_padding = 15;
+      right_padding = 15;
       window_gap = 15;
         };
 
@@ -42,6 +42,8 @@
         yabai -m space 10 --label utils
 
         yabai -m rule --add app="Music" space=utils
+
+	yabai -m config external_bar all:40:0
 
         exec ~/.config/borders/bordersrc &
 

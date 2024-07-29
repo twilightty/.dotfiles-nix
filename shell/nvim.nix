@@ -5,7 +5,31 @@
 -- comment
 print('init.lua loaded')
 
-vim.cmd('colorscheme tokyonight-night')
+
+
+return require('packer').startup(function(use)
+  -- Packer can manage itself
+  use 'wbthomason/packer.nvim'
+  use 'overcache/NeoSolarized'
+  use 'vim-airline/vim-airline'
+  use 'vim-airline/vim-airline-themes'
+  use 'nvim-treesitter/nvim-treesitter'
+  use 'hrsh7th/nvim-cmp'
+  use 'neovim/nvim-lspconfig'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'folke/tokyonight.nvim'
+  use {
+  'nvim-tree/nvim-tree.lua',
+  requires = {
+    'nvim-tree/nvim-web-devicons', -- optional, for file icons
+  },
+  }
+
+vim.cmd('colorscheme tokyonight-storm')
+
 vim.cmd('set termguicolors')
 
 -- disable netrw at the very start of your init.lua (strongly advised)
@@ -18,6 +42,8 @@ vim.opt.cursorline = true
 vim.g.mapleader = ' '
 vim.wo.number = true
 vim.opt.relativenumber = true
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
 vim.keymap.set('n', '<Leader>e', ':NvimTreeToggle<CR>')
 
 require("tokyonight").setup({
@@ -130,29 +156,6 @@ require("nvim-tree").setup({
       { name = 'cmdline' }
     })
   })
-
-
-return require('packer').startup(function(use)
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
-  use 'overcache/NeoSolarized'
-  use 'vim-airline/vim-airline'
-  use 'vim-airline/vim-airline-themes'
-  use 'nvim-treesitter/nvim-treesitter'
-  use 'hrsh7th/nvim-cmp'
-  use 'neovim/nvim-lspconfig'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
-  use 'hrsh7th/cmp-cmdline'
-  use 'folke/tokyonight.nvim'
-  use {
-  'nvim-tree/nvim-tree.lua',
-  requires = {
-    'nvim-tree/nvim-web-devicons', -- optional, for file icons
-  },
-  }
-
 end)
 	'';
     };
