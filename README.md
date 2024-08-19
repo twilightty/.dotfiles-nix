@@ -12,5 +12,6 @@ darwin-rebuild switch --flake .
 ```
 
 ![screenshot](screenshot.png)
+![screenshot](linux_screenshot.png)
 
 wallpapers belong to the computer clan
