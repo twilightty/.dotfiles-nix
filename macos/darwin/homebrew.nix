@@ -86,7 +86,7 @@
           "homebrew/bundle"
           "homebrew/services"
           "FelixKratz/formulae"  
-	  "nikitrabobko/tap"
+	  "nikitabobko/tap"
         ];
     };
 }
