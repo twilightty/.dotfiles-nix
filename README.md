@@ -12,7 +12,9 @@ home-manager switch --flake .#kirb
 ## Explaination
 ```
 - macos/: macos config stuff
-- ./home.nix: linux setup
+- linux/: linux setup
+
+# dig into the folder to see what's going on :)
 ```
 Screenshots of macOS and Linux environment
 ![macOS](screenshot.png)

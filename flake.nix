@@ -42,7 +42,7 @@
         extraSpecialArgs = {inherit spicetify-nix;};
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
-        modules = [ ./home.nix ./spicetify.nix ];
+        modules = [ ./linux/home.nix ./linux/spicetify.nix ];
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
