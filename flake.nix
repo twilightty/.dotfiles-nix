@@ -61,7 +61,7 @@
       specialArgs = { inherit inputs; };
       modules = [
         inputs.nix-index-database.darwinModules.nix-index
-        ./darwin
+        ./macos/darwin
         ({pkgs, inputs, ...}: {
           nixpkgs.config = nixpkgsConfig;
           system = {
@@ -114,11 +114,11 @@
             };
             users.kirb = { ... }: with inputs; {
               imports = [
-                ./shell
-                ./shell/jankyborders.nix
-		./shell/nvim.nix
-		./shell/ohmytmux.nix
-		./shell/alacritty.nix
+                ./macos/shell
+                ./macos/shell/jankyborders.nix
+		./macos/shell/nvim.nix
+		./macos/shell/ohmytmux.nix
+		./macos/shell/alacritty.nix
                 nix-doom-emacs.hmModule
               ];
               programs.neovim.enable = true;
