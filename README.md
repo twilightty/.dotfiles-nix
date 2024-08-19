@@ -2,16 +2,21 @@
 
 ## Build and install
 ```bash
+# for macos
 darwin-rebuild switch --flake .
+
+# for linux 
+home-manager switch --flake .#kirb
 ```
 
 ## Explaination
 ```
-- darwin/: non-nix packages (homebrew or macports)
-- shell/: native nix packages
+- macos/: macos config stuff
+- ./home.nix: linux setup
 ```
+Screenshots of macOS and Linux environment
+![macOS](screenshot.png)
 
-![screenshot](screenshot.png)
-![screenshot](linux_screenshot.png)
+![NixOS](linux_screenshot.png)
 
 wallpapers belong to the computer clan
