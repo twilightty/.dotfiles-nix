@@ -54,6 +54,14 @@
     cava
     pipes
     hyprshot
+	nodejs_22
+	go
+	virtualbox
+	kdePackages.breeze-gtk
+	kdePackages.breeze-icons
+	kdePackages.breeze 
+	catppuccin-papirus-folders
+	papirus-folders
   ] ++
   [ (pkgs.nerdfonts.override {fonts = [ "FiraCode" "JetBrainsMono" ]; }) ];
   

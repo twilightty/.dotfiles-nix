@@ -4,8 +4,12 @@
   cursorTheme = {
     name = "catppuccin-mocha-green-cursors";
   };
+  iconTheme = {
+	name = "Papirus-Dark";
+	  };
+
   theme = { name = "catppuccin-macchiato-green-compact+rimless,black";
-  package = pkgs.catppuccin-gtk.override {
+    package = pkgs.catppuccin-gtk.override {
     accents = [ "green" ];
     size = "compact";
     variant = "macchiato";
