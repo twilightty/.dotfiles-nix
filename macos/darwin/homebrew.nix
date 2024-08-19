@@ -77,7 +77,8 @@
             "linearmouse"
 
 	    "visual-studio-code"
-
+	    "aerospace"
+	    "wezterm"
 
         ];
 
@@ -85,6 +86,7 @@
           "homebrew/bundle"
           "homebrew/services"
           "FelixKratz/formulae"  
+	  "nikitrabobko/tap"
         ];
     };
 }

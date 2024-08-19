@@ -1,6 +1,6 @@
 { config, pkgs, lib, ... }: {
     services.yabai = {
-        enable = true;
+        enable = false;
         enableScriptingAddition = true;
         config = {
                   external_bar = "all:0:0";

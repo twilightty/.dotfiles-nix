@@ -1,6 +1,6 @@
 { config, pkgs, lib, ... }: {
     services.skhd = {
-        enable = true;
+        enable = false;
         skhdConfig = ''
             # block alt +a / u/ o/ s (jf)
             
