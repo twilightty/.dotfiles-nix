@@ -45,7 +45,7 @@
   imports = [
     ./git.nix
     ./gtk.nix 
-    ./nvim.nix
+    ../../shared/nvim.nix
 	./qt.nix
   ];
 }

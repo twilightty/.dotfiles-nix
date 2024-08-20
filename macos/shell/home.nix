@@ -1,6 +1,6 @@
 { ... }: {
     imports = [
         ./jankyborders.nix
-	./nvim.nix
+	../../shared/nvim.nix
     ];
 }

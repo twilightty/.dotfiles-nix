@@ -28,6 +28,7 @@
     vlc
     google-chrome
     catppuccin-cursors.mochaGreen
+	libnotify
     xfce.thunar
     xfce.exo
     gvfs
@@ -62,6 +63,7 @@
 	kdePackages.breeze 
 	catppuccin-papirus-folders
 	papirus-folders
+	lunar-client
   ] ++
   [ (pkgs.nerdfonts.override {fonts = [ "FiraCode" "JetBrainsMono" ]; }) ];
   

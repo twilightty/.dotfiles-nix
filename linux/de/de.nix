@@ -3,5 +3,6 @@
     	./hyprland.nix
 	./waybar.nix
 	./hyprpaper.nix
+	./mako.nix
     ];
 }

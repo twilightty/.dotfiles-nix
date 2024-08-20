@@ -5,9 +5,9 @@
     settings = {
 	ipc = "on";
 	splash =  false;
-	preload = [ "/home/kirb/.config/home-manager/de/wp.jpg" ];
+	preload = [ "/home/kirb/.config/home-manager/linux/de/wp.jpg" ];
 	wallpaper = [
-	  "DP-1, /home/kirb/.config/home-manager/de/wp.jpg"	];
+	  "DP-1, /home/kirb/.config/home-manager/linux/de/wp.jpg"	];
     };
   };
 }
