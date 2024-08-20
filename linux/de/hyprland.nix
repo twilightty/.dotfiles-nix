@@ -48,6 +48,9 @@ gestures {
 }
 
 exec-once = waybar
+windowrule = pseudo, fcitx
+exec-once=fcitx5 -d -r
+exec-once=fcitx5-remote -r
 
 device {
   name = apple-inc.-magic-trackpad-2

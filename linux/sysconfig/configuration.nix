@@ -1,6 +1,5 @@
 # Edit this configuration file to define what should be installed on
-# your system. Help is available in the configuration.nix(5) man page, on
-# https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
+# your system. Help is available in the configuration.nix(5) man page, on https://search.nixos.org/options and in the NixOS manual (`nixos-help`).
 
 { config, lib, pkgs, ... }:
 
@@ -43,9 +42,19 @@
   #   useXkbConfig = true; # use xkb.options in tty.
   # };
 
+  i18n.inputMethod = {
+	type = "fcitx5";
+	enable = true;
+	fcitx5.addons = with pkgs; [
+		libsForQt5.fcitx5-unikey
+	];
+  };
+
+  i18n.inputMethod.fcitx5.waylandFrontend = true;
+
   # Enable the X11 windowing system.
   services.xserver.enable = true;
-  services.xserver.displayManager.sddm.enable = true;
+  services.displayManager.sddm.enable = true;
 
   services.samba.enable = true;
   services.rpcbind.enable = true;
@@ -104,6 +113,11 @@
     nfs-utils
     cloudflare-warp
     polkit-kde-agent
+	python312Full
+	python312Packages.pip
+	pkg-config
+	cairo
+	cairomm
   ];
 	
   programs.hyprland.enable = true;

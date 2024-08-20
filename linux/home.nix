@@ -64,6 +64,8 @@
 	catppuccin-papirus-folders
 	papirus-folders
 	lunar-client
+	xdg-desktop-portal-hyprland
+	playerctl
   ] ++
   [ (pkgs.nerdfonts.override {fonts = [ "FiraCode" "JetBrainsMono" ]; }) ];
   
