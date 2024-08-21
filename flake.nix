@@ -2,7 +2,6 @@
   description = "Home Manager configuration of kirb";
 
   inputs = {
-    # Specify the source of Home Manager and Nixpkgs.
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     
     # macOS Stuff
@@ -49,7 +48,6 @@
       };
 
       # Build darwin flake using:
-    # $ darwin-rebuild build --flake .#simple
     darwinConfigurations."emladevops" =
     let
         system = "aarch64-darwin";

@@ -94,7 +94,7 @@
                 ./shell
                 ./shell/jankyborders.nix
 		./shell/nvim.nix
-		./shell/ohmytmux.nix
+		../shared/ohmytmux.nix
 		./shell/alacritty.nix
                 nix-doom-emacs.hmModule
               ];

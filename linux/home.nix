@@ -44,6 +44,7 @@
     noto-fonts
     noto-fonts-cjk
     noto-fonts-emoji
+	cider
     liberation_ttf
     fira-code
     fira-code-symbols
@@ -66,6 +67,13 @@
 	lunar-client
 	xdg-desktop-portal-hyprland
 	playerctl
+	cbonsai
+	fortune
+	bunnyfetch
+	spotify-player
+	lsd
+	tmux
+	ripgrep
   ] ++
   [ (pkgs.nerdfonts.override {fonts = [ "FiraCode" "JetBrainsMono" ]; }) ];
   

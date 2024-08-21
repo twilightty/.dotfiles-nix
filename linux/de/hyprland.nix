@@ -2,8 +2,8 @@
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
-    	"$mod" = "ALT";
-	"$shiftMod" = "ALT_SHIFT";
+    	"$mod" = "SUPER";
+	"$shiftMod" = "SUPER";
 
 	bindm = [
 	  "$mod, mouse:272, movewindow"
@@ -22,7 +22,11 @@
 	  "$mod, Q, killactive"
 	  "$shiftMod, S , exec, hyprshot -m region"
 	  "$shiftMod, F3, exec, hyprshot -m window"
+	  ", XF86AudioRaiseVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 1%+"
+	  ", XF86AudioLowerVolume, exec, wpctl set-volume -l 1.4 @DEFAULT_AUDIO_SINK@ 1%-"
+	  ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 	]
+	
 	++ (
 	  builtins.concatLists (builtins.genList (
 	    x: let
@@ -54,7 +58,7 @@ exec-once=fcitx5-remote -r
 
 device {
   name = apple-inc.-magic-trackpad-2
-  sensitivity = 0.5
+  sensitivity = 0.4
   accel_profile = adaptive
 }
 
@@ -63,6 +67,7 @@ input {
   	natural_scroll = true
   	scroll_factor = 0.3
 	tap-to-click = false
+	clickfinger_behavior = true
   }
 }
 
