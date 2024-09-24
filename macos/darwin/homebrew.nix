@@ -15,7 +15,6 @@
             "ripgrep"
 	    "tmux"
 	    "node"
-	    "yarn"
 	    "sketchybar"
 			"eza"
 			"fortune"

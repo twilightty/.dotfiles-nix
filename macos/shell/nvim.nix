@@ -102,6 +102,9 @@ require("lazy").setup({
 		'm4xshen/autoclose.nvim',
 		lazy = false
 	},
+	{
+		'pcolladosoto/tinygo.nvim',
+	},
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins. install = { colorscheme = { "habamax" } },
@@ -121,7 +124,7 @@ local cmp = require'cmp'
 require('nvim-tree').setup()
 require('mason').setup()
 require('mason-lspconfig').setup({
-	ensure_installed = {'tsserver'},
+	ensure_installed = {'ts_ls'},
 	automatic_installation = true,
 })
 
@@ -130,6 +133,8 @@ require('mason-lspconfig').setup_handlers({
 		lspconfig[server].setup({})
 	end,
 })
+
+require("tinygo").setup()
 
 
   cmp.setup({
@@ -198,7 +203,7 @@ require('mason-lspconfig').setup_handlers({
   -- Set up lspconfig.
   local capabilities = require('cmp_nvim_lsp').default_capabilities()
   -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-  require('lspconfig')['tsserver'].setup {
+  require('lspconfig')['ts_ls'].setup {
     capabilities = capabilities
   }
   require('lspconfig')['gopls'].setup {

@@ -48,7 +48,7 @@
       };
 
       # Build darwin flake using:
-    darwinConfigurations."emladevops" =
+    darwinConfigurations."twilightty" =
     let
         system = "aarch64-darwin";
 	user = "kirb";

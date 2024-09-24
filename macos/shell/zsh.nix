@@ -7,7 +7,7 @@
         initExtraBeforeCompInit = ''
         eval "$(/opt/homebrew/bin/brew shellenv)"
 	    eval "$(starship init zsh)"
-	    export PATH=$PATH:/Users/kirb/Library/Python/3.9/bin:/Users/kirb/.local/bin:/Users/kirb/.spicetify
+	    export PATH=$PATH:/Users/kirb/Library/Python/3.9/bin:/Users/kirb/.local/bin:/Users/kirb/.spicetify:/Users/kirb/.bun/bin
         '';
 		oh-my-zsh = {
 			enable = true;
