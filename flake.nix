@@ -79,7 +79,7 @@
 
 
         system.defaults = {
-          dock.autohide = true;
+          dock.autohide = false;
           dock.mru-spaces = false;
           finder.AppleShowAllExtensions = true;
           finder.FXPreferredViewStyle = "clmv";
@@ -114,7 +114,7 @@
               imports = [
                 ./macos/shell
                 ./macos/shell/jankyborders.nix
-		./macos/shell/nvim.nix
+		./shared/nvim.nix
 		./macos/shell/ohmytmux.nix
 		./macos/shell/alacritty.nix
                 nix-doom-emacs.hmModule
