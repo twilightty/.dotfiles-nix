@@ -18,6 +18,17 @@
                 g = "git";
                 skhd = "/nix/store/jrz05pcnlrzb0jwgalnvrmp0ja6xqb2q-skhd-0.3.9/bin/skhd";
  				ls = "eza --icons=always";               
+				v = "nvim";
+				nv = "nvim";
+				mux = "tmuxinator start";
+				muxs = "tmuxinator stop";
         };
     };
+		programs.tmux = {
+			enable = true;
+			extraConfig = builtins.readFile ./tmux.conf;
+			tmuxinator = {
+				enable = true;
+			};
+		};
 }

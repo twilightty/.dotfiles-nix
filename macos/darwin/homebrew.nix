@@ -13,7 +13,6 @@
             "fswatch"
             "docker"
             "ripgrep"
-	    "tmux"
 	    "node"
 	    "sketchybar"
 			"eza"
