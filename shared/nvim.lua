@@ -47,6 +47,14 @@ require("lazy").setup({
 	},
 
 	{
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    ---@module "ibl"
+    ---@type ibl.config
+    opts = {},
+	},
+
+	{
   'stevearc/oil.nvim',
   ---@module 'oil'
   ---@type oil.SetupOpts
@@ -128,14 +136,6 @@ require("lazy").setup({
         require'alpha'.setup(require'alpha.themes.dashboard'.config)
     end
   },
-	{
-		"Pocco81/auto-save.nvim",
-		config = function ()
-			require('auto-save').setup {
-				
-			}
-		end
-	},
 	{
 		"andweeb/presence.nvim"
 	},

@@ -1,6 +1,5 @@
 { config, pkgs, lib, inputs, system, ... }: {
     imports = [
-        ./emacs.nix
         ./zsh.nix
     ];
     programs.neovim.enable = true;
