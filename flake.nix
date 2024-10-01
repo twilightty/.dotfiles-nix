@@ -79,8 +79,6 @@
 
 
         system.defaults = {
-          dock.autohide = false;
-          dock.mru-spaces = false;
           finder.AppleShowAllExtensions = true;
           finder.FXPreferredViewStyle = "clmv";
           NSGlobalDomain.AppleInterfaceStyle = "Dark";

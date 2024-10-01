@@ -1,6 +1,6 @@
 { config, pkgs, lib, ... }: {
     services.skhd = {
-        enable = false;
+        enable = true;
         skhdConfig = ''
             # block alt +a / u/ o/ s (jf)
             
@@ -21,6 +21,8 @@
             yabai -m window --toggle border
 
             alt - d : yabai -m space --layout $(yabai -m query --spaces --space | jq -r 'if .type == "bsp" then "stack" else "bsp" end')
+
+						alt - return: open -a Alacritty -n
         '';
         
     };

@@ -11,7 +11,7 @@
         '';
 		oh-my-zsh = {
 			enable = true;
-			theme = "fino-time";
+			theme = "agnoster";
 		};
         shellAliases = {
                 nupd = "cd ~/.config/nix-kirb && darwin-rebuild switch --flake .";

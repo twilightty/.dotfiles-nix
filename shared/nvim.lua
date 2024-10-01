@@ -35,7 +35,7 @@ vim.cmd([[ set nofoldenable]])
 
 -- Setup lazy.nvim
 require("lazy").setup({
-	checker = { enable = false },
+	checker = { enabled = false, notify = false },
   spec = {
 	{
 		'nvim-lualine/lualine.nvim',
@@ -199,7 +199,6 @@ require("lazy").setup({
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins. install = { colorscheme = { "habamax" } },
   -- automatically check for plugin updates
-  checker = { enabled = true },
 })
 
 require('lualine').setup {
@@ -211,7 +210,9 @@ local lspconfig = require('lspconfig')
 
 local cmp = require'cmp'
 
-require('nvim-tree').setup()
+require('nvim-tree').setup({
+}
+)
 require('mason').setup()
 require('mason-lspconfig').setup({
 	ensure_installed = {'ts_ls', 'gopls'},
@@ -232,31 +233,8 @@ require('mason-lspconfig').setup_handlers({
 		}
 	}
   })
+	
 
-require('kanagawa').setup({
-    compile = false,             -- enable compiling the colorscheme
-    undercurl = true,            -- enable undercurls
-    commentStyle = { italic = true },
-    functionStyle = {},
-    keywordStyle = { italic = true},
-    statementStyle = { bold = true },
-    typeStyle = {},
-    transparent = false,         -- do not set background color
-    dimInactive = false,         -- dim inactive window `:h hl-NormalNC`
-    terminalColors = true,       -- define vim.g.terminal_color_{0,17}
-    colors = {                   -- add/modify theme and palette colors
-        palette = {},
-        theme = { wave = {}, lotus = {}, dragon = {}, all = {} },
-    },
-    overrides = function(colors) -- add/modify highlights
-        return {}
-    end,
-    theme = "dragon",              -- Load "wave" theme when 'background' option is not set
-    background = {               -- map the value of 'background' option to a theme
-        dark = "dragon",           -- try "dragon" !
-        light = "lotus"
-    },
-})
 
 -- The setup config table shows all available config options with their default values:
 require("presence").setup({
@@ -288,7 +266,6 @@ require('onedark').setup {
 }
 require('onedark').load()
 
-vim.cmd("colorscheme onedark")
 
   require("neorg").setup({
     load = {
@@ -307,6 +284,10 @@ vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 
 vim.notify = require("notify")
+
+require('notify').setup({
+	background_colour = "#000000",
+})
 
 
 require('hologram').setup({
@@ -443,3 +424,28 @@ require('gitsigns').setup {
 
 require('Comment').setup()
 
+vim.cmd[[hi NvimTreeNormal guibg=NONE ctermbg=NONE]]
+
+require('kanagawa').setup({
+    compile = false,             -- enable compiling the colorscheme
+    undercurl = true,            -- enable undercurls
+    commentStyle = { italic = true },
+    functionStyle = {},
+    keywordStyle = { italic = true},
+    statementStyle = { bold = true },
+    typeStyle = {},
+    transparent = true,         -- do not set background color
+    dimInactive = false,         -- dim inactive window `:h hl-NormalNC`
+    terminalColors = true,       -- define vim.g.terminal_color_{0,17}
+    colors = {                   -- add/modify theme and palette colors
+        palette = {},
+        theme = { wave = {}, lotus = {}, dragon = {}, all = {} },
+    },
+    overrides = function(colors) -- add/modify highlights
+        return {}
+    end,
+    theme = "dragon",              -- Load "wave" theme when 'background' option is not set
+})
+
+vim.cmd("colorscheme kanagawa")
+vim.cmd("let &fillchars ..= \'eob: \'")

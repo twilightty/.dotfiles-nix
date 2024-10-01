@@ -1,6 +1,6 @@
 { config, pkgs, lib, ... }: {
     services.yabai = {
-        enable = false;
+        enable = true;
         enableScriptingAddition = true;
         config = {
                   external_bar = "all:0:0";
@@ -26,8 +26,11 @@
 
     extraConfig = ''
 
+				osascript -e 'tell application id "tracesOf.Uebersicht" to refresh'
+
         # rules
 
+				yabai -m rule --add app=".*" sub-layer=normal
         yabai -m rule --add app="^System Settings$"    manage=off
         yabai -m rule --add app="^System Information$" manage=off
         yabai -m rule --add app="^System Preferences$" manage=off

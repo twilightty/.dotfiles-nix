@@ -58,7 +58,7 @@
 
 
         system.defaults = {
-          dock.autohide = false ;
+          dock.autohide = true;
           dock.mru-spaces = false;
           finder.AppleShowAllExtensions = true;
           finder.FXPreferredViewStyle = "clmv";
